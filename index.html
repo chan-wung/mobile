@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>서울문화재단</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="package/css/swiper.min.css">
+    <script src="package/js/swiper.min.js"></script>
+    <style media="screen">
+      @font-face { font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal; }
+      /* @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+      .nanumgothic * { font-family: 'Nanum Gothic', sans-serif; } */
+    #slide .swiper-container {
+        width: 720px;
+        height: 1024px;
+        margin-top: 10px;
+        position: relative;
+        /* background: green; */
+        overflow: hidden;
+      }
+    #slide .swiper-slide {
+        width: 720px;
+        height: 1024px;
+        float: left;
+        position: relative;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      #slide .swiper-pagination {
+        position: absolute;
+        bottom:255px!important;
+        left: 130px!important;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0,0,0);
+        z-index: 12;
+      }
+    #slide .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        margin-left: 13px!important;
+        background: #777!important;
+        display: inline-block;
+        border-radius: 0;
+        background: #000;
+        opacity: 1!important;
+      }
+      #slide .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: none!important;
+        border: 2px solid #fff;
+        box-sizing:border-box;
+      }
+
+      .weekly .swiper-container {
+          width: 720px;
+          height: 615px;
+          margin-top: 10px;
+          position: relative;
+          /* background: green; */
+          overflow: hidden;
+        }
+      .weekly .swiper-slide {
+          width: 720px;
+          height: 615px;
+          float: left;
+          position: relative;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .weekly .swiper-pagination {
+          position: absolute;
+          bottom:530px!important;
+          left: 280px!important;
+          text-align: center;
+          transition: .3s opacity;
+          transform: translate3d(0,0,0);
+          z-index: 12;
+        }
+      .weekly .swiper-pagination-bullet {
+          width: 14px;
+          height: 14px;
+          margin-left: 13px!important;
+          background: #d7d7d7!important;
+          display: inline-block;
+          border-radius: 0;
+          background: #000;
+          opacity: 1!important;
+        }
+        .weekly .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: none!important;
+          border: 2px solid #f49e00;
+          box-sizing:border-box;
+        }
+        .recommendContents > .swiper-container{
+          width: 760px;
+          padding-top: 55px;
+        }
+        .recommendContents li.swiper-slide{
+          width: 22%!important;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+      .reTabs .swiper-slide:first-child {
+         margin-left: 50px;
+       }
+        .reBlock > div > .swiper-container{
+          width: 760px;
+          height: 100%;
+        }
+        .reBlock > div > div.swiper-container > div.swiper-wrapper > div.swiper-slide{
+          width: 40%!important;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .reBlock > div > div.swiper-container > div.swiper-wrapper > div.swiper-slide:first-child {
+         margin-left: 15px;
+       }
+      div.rental > div.swiper-container.aa{
+         position: absolute;
+         width: 108px!important;
+         z-index: 111;
+         background: #fff;
+       }
+       .rental .swiper-container.qwe{
+         width: 720px
+       }
+       .rental > .swiper-container.aa li.swiper-slide{
+         width: 100%!important;
+       }
+       .rental li.swiper-slide{
+         width: 15%!important;
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+       }
+    </style>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#nav-icon4').click(function(){
+        if($(this).hasClass("open")){
+          $(this).removeClass('open');
+          $("nav").animate({left:"720px"},200);
+        }
+        else{
+          $(this).addClass('open');
+          $("nav").animate({left:"0"},500);
+        }
+      });
+      $(".submenu:first").show();
+      var plus = '+',
+          minus = '-';
+      $(".navMenu > li").click(function(){
+        $(this).addClass("on");
+        $(this).find(".submenu").stop().show();
+        $(this).siblings().removeClass("on");
+        $(this).siblings().find(".submenu").stop().hide();
+      });
+
+      $(".submenu > li").click(function(){
+        $(this).find(".submenu2").stop().slideToggle(500);
+        $(this).toggleClass("on");
+        $(this).siblings().find(".submenu2").stop().slideUp(500);
+        $(this).siblings().removeClass("on");
+        if($(this).hasClass("on")){
+          $(this).find("a").addClass("on");
+        }
+        else{
+          $(this).find("a").removeClass("on");
+        }
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <script>
+
+    </script>
+    <div id="wrap">
+      <header>
+        <div class="container">
+          <h1><a href="#"><img src="images/logo.png" alt="서울문화재단 로고"></a></h1>
+          <!-- <a href="#!" class="menuBar"><img src="images/menuBar.png" alt="메뉴바"></a> -->
+          <div id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="navHeader">
+          <!-- <div class="container"> -->
+            <h1 class="container">전체메뉴</h1>
+          <!-- </div> -->
+        </div>
+        <div class="loginBox">
+          <div class="container">
+            <p class="loginText">편리한 사용을 위해 로그인을 해주세요.</p>
+            <div class="loginInner">
+              <ul>
+                <li><a href="#!"><img src="images/loginImg.png" alt="로그인이미지">로그인</a></li>
+                <li><a href="#!"><img src="images/loginImg2.png" alt="회원가입이미지">회원가입</a></li>
+              </ul>
+            </div>
+            <p class="loginText2"><a href="#!">아이디/비밀번호 찾기</a></p>
+          </div>
+        </div>
+        <ul class="navMenu">
+          <li class="on"><a href="#!">문화참여</a>
+            <ul class="submenu">
+            <li class="hasSub"><a href="#!">참여신청</a>
+              <ul class="submenu2">
+              <li><a href="#!">ㆍSFAC 캘린더</a></li>
+              <li><a href="#!">ㆍ입주공모</a></li>
+              <li><a href="#!">ㆍSFAC 프로그램</a></li>
+              <li><a href="#!">ㆍ지원사업</a></li>
+            </ul>
+           </li>
+            <li><a href="#!">대관신청</a></li>
+            <li><a href="#!">문화캐스터</a></li>
+            <li class="hasSub"><a href="#!">문화계소식</a>
+              <ul class="submenu2">
+              <li><a href="#!">ㆍ공연전시프로그램</a></li>
+              <li><a href="#!">ㆍ문화기관소식</a></li>
+              <li><a href="#!">ㆍ문화예술정보목록</a></li>
+            </ul>
+            </li>
+          </ul>
+        </li>
+          <li><a href="#!">예술공간</a><ul class="submenu">
+            <li><a href="#!">예술공간소개</a></li>
+            <li class="hasSub"><a href="#!">관악어린이창작놀이터</a>
+              <ul class="submenu2">
+              <li><a href="#!">ㆍ관악어린이창작놀이터</a></li>
+              <li><a href="#!">ㆍ공간소개</a></li>
+              <li><a href="#!">ㆍ공간소식</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">금천예술공장</a>
+              <ul class="submenu2">
+              <li><a href="#!">ㆍ금천예술공장</a></li>
+              <li><a href="#!">ㆍ공간소개</a></li>
+              <li><a href="#!">ㆍ공간소식</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">남산예술센터</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ남산예술센터</a></li>
+                <li><a href="#!">ㆍ공간소개</a></li>
+                <li><a href="#!">ㆍ공간소식</a></li>
+              </ul>
+            </li>
+          </ul> </li>
+          <li><a href="#!">주요사업</a><ul class="submenu">
+            <li class="hasSub"><a href="#!">창작지원</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ서울문화제단 공모 한 눈에 보기</a></li>
+                <li><a href="#!">ㆍ서울예술지원</a></li>
+                <li><a href="#!">ㆍ유양예술지원</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">예술교육</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ서울형 예술교육 소개</a></li>
+                <li><a href="#!">ㆍ서울형 학교예술교육</a></li>
+                <li><a href="#!">ㆍ서울 예술교육 아카데미</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">지역문화</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ지역문화 사업소개</a></li>
+                <li><a href="#!">ㆍ지역문화 자생력 강화</a></li>
+                <li><a href="#!">ㆍ서울의 거리예술</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">생활문화</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ생활문화 사업소개</a></li>
+                <li><a href="#!">ㆍ자치구 생활문화 협력체계구축</a></li>
+                <li><a href="#!">ㆍ생활문학 지원센터</a></li>
+              </ul>
+            </li>
+          </ul> </li>
+          <li><a href="#!">열린광장</a><ul class="submenu">
+            <li class="hasSub"><a href="#!">새소식</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ공지사항</a></li>
+                <li><a href="#!">ㆍ채용공고</a></li>
+                <li><a href="#!">ㆍ예술지원공고</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">입찰공고/계약</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ입찰공고</a></li>
+                <li><a href="#!">ㆍ계약업무가이드</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">문화재단뉴스</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ보도자료</a></li>
+                <li><a href="#!">ㆍ재단관련기사</a></li>
+                <li><a href="#!">ㆍ재단발행도서</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">서울문화재단에 바란다</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ정책제안하기</a></li>
+                <li><a href="#!">ㆍ안전신고접수 및 신고포상</a></li>
+                <li><a href="#!">ㆍFAQ</a></li>
+              </ul>
+            </li>
+          </ul> </li>
+          <li><a href="#!">기관소개</a><ul class="submenu">
+            <li class="hasSub"><a href="#!">소개</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ서울문화재단 소개</a></li>
+                <li><a href="#!">ㆍ대표이사 인사말</a></li>
+                <li><a href="#!">ㆍ연혁</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">직원찾기</a></li>
+            <li class="hasSub"><a href="#!">윤리경영</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ인권경영 선언문</a></li>
+                <li><a href="#!">ㆍ시민서비스 현장</a></li>
+                <li><a href="#!">ㆍ임직원 행동강령</a></li>
+              </ul>
+            </li>
+            <li class="hasSub"><a href="#!">오시는 길</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ서울문화재단 본관</a></li>
+                <li><a href="#!">ㆍ서울문화재단 예술공간</a></li>
+              </ul>
+            </li>
+          </ul> </li>
+          <li><a href="#!">정보공개</a><ul class="submenu">
+            <li class="hasSub"><a href="#!">재단정보공개</a>
+              <ul class="submenu2">
+                <li><a href="#!">ㆍ재단정보공표목록</a></li>
+                <li><a href="#!">ㆍ기획</a></li>
+                <li><a href="#!">ㆍ인사 총무 회계</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">결재문서</a></li>
+            <li><a href="#!">정보목록</a></li>
+            <li><a href="#!">정보공개편람</a></li>
+            <li><a href="#!">공공데이터개방</a></li>
+          </ul> </li>
+        </ul>
+      </nav>
+
+      <div id="slide">
+        <a href="#!" class="slideBtn"><img src="images/arrow2.png" alt="슬라이드넘김버튼" class="arrow1"></a>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/visual1.png" alt="">
+          </div>
+            <div class="swiper-slide">
+              <img src="images/visual2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/visual3.png" alt="">
+          </div>
+          <div class="swiper-pagination swiper-pagination-white"></div>
+        </div>
+      </div>
+      <div class="quickMenuBtn"><a href="#!"></a></div>
+    </div>
+      <div id="quickMenu">
+        <div class="container">
+          <ul>
+            <li><a href="#!"><div>
+              <img src="images/quick1.png" alt="2020 예술지원">
+            </div>  <p>2020<br>예술지원</p></a></li>
+            <li><a href="#!"><div><img src="images/quick2-2.png" alt="SFAC 프로그램"></div> <p>SFAC<br>프로그램</p></a></li>
+            <li><a href="#!"><div><img src="images/quick3-2.png" alt="대관신청"></div> <p>대관<br>신청</p></a></li>
+            <li><a href="#!"><div><img src="images/quick4-2.png" alt="뉴스레터/웹진"></div> <p>뉴스레터<br>/웹진</p></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contents">
+        <div class="recommendContents" style="-ms-overflow-style:none;">
+          <div class="container">
+            <p class="newText1">예술로 더 즐겁게!</p>
+            <h2 class="newText2">추천콘텐츠</h2>
+          </div>
+          <img src="images/nowevent.png" alt="뉴스이미지" class="newsTestImg">
+          <div class="swiper-container">
+          <ul class="reTabs swiper-wrapper">
+            <li class="swiper-slide"><a href=".reImg1">전체</a></li>
+            <li class="swiper-slide"><a href=".reImg2">#공연예술</a></li>
+            <li class="swiper-slide"><a href=".reImg3">#지원사업</a></li>
+            <li class="swiper-slide"><a href=".reImg4">#연극</a></li>
+            <li class="swiper-slide"><a href=".reImg5">#시각전시</a></li>
+          </ul>
+        </div>
+          <div class="reBlock">
+            <div class="reImg1">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+               </div>
+              </div>
+
+            </div>
+            <div class="reImg2">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+               </div>
+              </div>
+
+            </div>
+            <div class="reImg3">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+               </div>
+              </div>
+
+            </div>
+            <div class="reImg4">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+               </div>
+              </div>
+
+            </div>
+            <div class="reImg5">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg1.png" alt="이태리블루스">
+                 <h3 class="reImgTest1">이태리블루스</h3>
+                 <p class="reImgTest2">2020.02.10</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg2.png" alt="시간의 난극">
+                 <h3 class="reImgTest1">시간의 난극</h3>
+                 <p class="reImgTest2">~2020.02.28</p>
+                 </a></div>
+                 <div class="swiper-slide"><a href="#!"><img src="images/reimg5.png" alt="몸짓을 말해">
+                 <h3 class="reImgTest1">몸짓을 말해</h3>
+                 <p class="reImgTest2">2020.02.28</p>
+                 </a></div>
+               </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="weekly">
+          <h2><img src="images/weeklyImg2.png" alt="추천이미지"> 위클리 추천</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <a href="#!"><img src="images/weeklyImg.png" alt="프루프록의 평행우주/~2020.02.28까지/평점-별4개" class="weeklyImg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!"><img src="images/weeklyImg.png" alt="프루프록의 평행우주/~2020.02.28까지/평점-별4개" class="weeklyImg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!"><img src="images/weeklyImg.png" alt="프루프록의 평행우주/~2020.02.28까지/평점-별4개" class="weeklyImg"></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+
+        <div class="rental">
+          <div class="container">
+            <p class="newText1">예술로 더 풍요롭게!</p>
+            <h2 class="newText2">시설대관</h2>
+          </div>
+          <img src="images/rentalHeadImg.png" alt="서울문화재단이미지">
+          <div class="showRental"></div>
+          <div class="swiper-container aa">
+            <ul class="rentalTab swiper-wrapper">
+              <li class="swiper-slide"><span class="renT"></span></li>
+            </ul>
+          </div>
+          <div class="swiper-container qwe">
+            <ul class="rentalTab swiper-wrapper">
+              <li class="swiper-slide"><span class="renT"></span></li>
+              <li class="swiper-slide"><a href=".rental1"><span class="renT">08</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental2"><span class="renT">09</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental3"><span class="renT">10</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental4"><span class="renT">11</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental5"><span class="renT">12</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental6"><span class="renT">13</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental7"><span class="renT">14</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental8"><span class="renT">15</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental9"><span class="renT">16</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental10"><span class="renT">17</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental11"><span class="renT">18</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental12"><span class="renT">19</span><br>OCT</a></li>
+              <li class="swiper-slide"><a href=".rental13"><span class="renT">20</span><br>OCT</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="rentalBlock">
+              <h3><img src="images/retalImg.png" alt=""> 날짜별 대관기능 기관</h3>
+              <div class="rental1">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental2">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental3">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental4">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental5">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental6">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental7">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental8">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental9">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental10">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental11">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental12">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+              <div class="rental13">
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg3.png" alt="서울무용센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">서울무용센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 서대문구 명지2길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+                <div class="rentalBox">
+                  <div class="rentalImg">
+                    <img src="images/retalImg2.png" alt="남산창작센터 이미지">
+                  </div>
+                  <div class="rentalText">
+                    <p class="rentalText1">남작창작센터</p>
+                    <p class="rentalText2"><img src="images/retalWifi.png" alt=""> 서울 중구 퇴계로26가길</p>
+                  </div>
+                  <div class="rentalTime">
+                    <img src="images/retalTime.png" alt="예약가능시간">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="webzine">
+          <div class="container">
+            <p class="newText1">예술로 더 새롭게!</p>
+            <h2 class="newText2">SFAC웹진</h2>
+          </div>
+          <div class="webzineSlide">
+            <a href="#!" class="leftBtn"><img src="images/arrowLeft.png" alt="webzine이전버튼"></a>
+            <div class="webzineSlideList">
+              <div class="webzineSlideImg">
+                <img src="images/webzineImg2.png" alt="비유 vol.25 이미지">
+                <img src="images/webzineImgText2.png" alt="비유 vol.25">
+                <img src="images/webzineImgText1.png" alt="문화+서울 vol.2020.01">
+                <img src="images/webzineImg1.png" alt="문화+서울 vol.2020.01">
+              </div>
+              <div class="webzineSlideImg">
+                <img src="images/webzineImg2.png" alt="비유 vol.25 이미지">
+                <img src="images/webzineImgText2.png" alt="비유 vol.25">
+                <img src="images/webzineImgText1.png" alt="문화+서울 vol.2020.01">
+                <img src="images/webzineImg1.png" alt="문화+서울 vol.2020.01">
+              </div>
+              <div class="webzineSlideImg">
+                <img src="images/webzineImg2.png" alt="비유 vol.25 이미지">
+                <img src="images/webzineImgText2.png" alt="비유 vol.25">
+                <img src="images/webzineImgText1.png" alt="문화+서울 vol.2020.01">
+                <img src="images/webzineImg1.png" alt="문화+서울 vol.2020.01">
+              </div>
+            </div>
+            <a href="#!" class="rightBtn"><img src="images/arrowRight.png" alt="webzine다음버튼"></a>
+          </div>
+        </div>
+        <div class="news">
+          <div class="newHead">
+            <div class="container">
+              <p class="newp1">매달 새로운 소식</p>
+              <p class="newp2">뉴스레터 신청</p>
+              <img src="images/newsLetter.png" alt="편지그림" class="newImg1">
+              <img src="images/newPhone.png" alt="스마트폰그림(서울문학재단)" class="newImg2">
+            </div>
+          </div>
+          <div class="container">
+            <p class="newText1">서울문화재단</p>
+            <h2 class="newText2">새소식</h2>
+            <div class="newTable">
+              <img src="images/mar10.png" alt="3월10일" class="mar">
+              <p class="newText3">2020 시민청 시민기획단 7기 모집 안내</p>
+              <p class="newText4">시민의 다양한 생각과 힘이 시민청의 프로그램이</p>
+            </div>
+            <table>
+              <tr>
+                <td>2020년도 시민청 시민기획단 7기 모집 안...</td><td>2020.03.10</td>
+              </tr>
+              <tr>
+                <td>[결과발표] 2020 서교예술실험센터...</td><td>2020.03.10</td>
+              </tr>
+              <tr>
+                <td>서울거리예술창작센터 2월 대관 신청...</td><td>2020.03.10</td>
+              </tr>
+              <tr>
+                <td>시민청 개관 7주년 기념 행사 &lt;시민청이...</td><td>2020.03.10</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <h1><a href="#!"><img src="images/footerLogo.png" alt="서울문화재단푸터로고"></a></h1>
+          <img src="images/line.png" alt="" class="line">
+          <ul>
+            <li><a href="#!">개인정보처리방침</a></li>
+            <li><a href="#!">이메일무단수집거부</a></li>
+            <li><a href="#!">시민서비스 헌장</a></li>
+            <li><a href="#!">찾아오시는길</a></li>
+            <li><a href="#!">직원찾기</a></li>
+          </ul>
+          <address>
+            서울문화재단사업자 등록번호 : 201-82-04361 <br>
+            대표전화 : 02-3290-7000 <br>
+            주소 : (우)02589서울특별시 동대문구 청계천로 517
+          </address>
+          <p>COPYRIGHT&copy; 2018 SFAC.ALL RIGHTS RESERVED</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+    var swiper1 = new Swiper('#slide > .swiper-container', {
+     spaceBetween: 100,
+     effect: 'fade',
+     autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+    loop:true,
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+     },
+
+   });
+    $('.slideBtn').click(function(){
+      if(swiper1.autoplay.stop()){
+        console.log("stop");
+        // swiper1.autoplay.start();
+      }
+      else if(swiper1.autoplay.start()){
+        console.log("start");
+        swiper1.autoplay.start();
+      }
+    });
+    var swiper2 = new Swiper('.weekly > .swiper-container', {
+     spaceBetween: 30,
+     centeredSlides: true,
+     autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+    loop:true,
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+     },
+
+   });
+
+    var swiper3 = new Swiper('.recommendContents > .swiper-container', {
+       slidesPerView: '5',
+       spaceBetween: 30,
+     });
+
+    var swiper4 = new Swiper('.reBlock .swiper-container', {
+        slidesPerView: '3',
+        // loop:true,
+        // freeMode: true,
+      });
+
+    var swiper5 = new Swiper('.rental > .swiper-container.qwe', {
+       slidesPerView: 'auto',
+       spaceBetween: 10,
+     });
+    </script>
+  </body>
+</html>
